@@ -1,0 +1,282 @@
+{   
+    "queries": [{
+        "config": {
+            "url": "https://bYTSo47tj:d001826a-f4ef-42c5-b0aa-a94f29967ba0@scalr.api.appbase.io",
+            "appname": "gitxplore-live",
+            "username": "bYTSo47tj",
+            "password": "d001826a-f4ef-42c5-b0aa-a94f29967ba0",
+            "host": "https://scalr.api.appbase.io"
+        },
+        "selectedTypes": [
+            "gitxplore-live"
+        ],
+        "result": {
+            "resultQuery": {
+                "type": "",
+                "result": [{
+                    "boolparam": 0,
+                    "parent_id": 0,
+                    "id": 1,
+                    "internal": [{
+                        "field": {
+                            "name": "forks",
+                            "type": "integer",
+                            "index": null
+                        },
+                        "query": "1",
+                        "selectedField": "forks",
+                        "selectedQuery": "range",
+                        "input": "",
+                        "analyzeTest": "analyzed",
+                        "type": "integer",
+                        "appliedQuery": {
+                            "range": {
+                                "forks": {
+                                    "gte": "10",
+                                    "lte": "500"
+                                }
+                            }
+                        }
+                    }],
+                    "minimum_should_match": "",
+                    "availableQuery": [{
+                        "range": {
+                            "forks": {
+                                "gte": "10",
+                                "lte": "500"
+                            }
+                        }
+                    }]
+                }],
+                "availableFields": [{
+                    "name": "forks",
+                    "type": "integer",
+                    "index": null
+                }, {
+                    "name": "fullname",
+                    "type": "string",
+                    "index": null
+                }, {
+                    "name": "description",
+                    "type": "string",
+                    "index": null
+                }],
+                "final": "{\n  \"query\": {\n    \"bool\": {\n      \"must\": [\n        {\n          \"range\": {\n            \"forks\": {\n              \"gte\": \"10\",\n              \"lte\": \"500\"\n            }\n          }\n        }\n      ]\n    }\n  }\n}"
+            },
+            "queryId": 2,
+            "isWatching": false,
+            "output": ""
+        },
+        "name": "range query",
+        "tag": "learn-mirage",
+        "version": "2.0"
+    }, {
+        "name": "gt-query",
+        "tag": "learn-mirage",
+        "config": {
+            "url": "https://bYTSo47tj:d001826a-f4ef-42c5-b0aa-a94f29967ba0@scalr.api.appbase.io",
+            "appname": "gitxplore-live",
+            "username": "bYTSo47tj",
+            "password": "d001826a-f4ef-42c5-b0aa-a94f29967ba0",
+            "host": "https://scalr.api.appbase.io"
+        },
+        "selectedTypes": [
+            "gitxplore-live"
+        ],
+        "result": {
+            "resultQuery": {
+                "type": "",
+                "result": [{
+                    "boolparam": 0,
+                    "parent_id": 0,
+                    "id": 2,
+                    "internal": [{
+                        "field": {
+                            "name": "forks",
+                            "type": "integer",
+                            "index": null
+                        },
+                        "query": "2",
+                        "selectedField": "forks",
+                        "selectedQuery": "gt",
+                        "input": "",
+                        "analyzeTest": "analyzed",
+                        "type": "numeric",
+                        "appliedQuery": {
+                            "range": {
+                                "forks": {
+                                    "gt": "400"
+                                }
+                            }
+                        }
+                    }],
+                    "minimum_should_match": "",
+                    "availableQuery": [{
+                        "range": {
+                            "forks": {
+                                "gt": "400"
+                            }
+                        }
+                    }]
+                }],
+                "availableFields": [{
+                    "name": "forks",
+                    "type": "integer",
+                    "index": null
+                }, {
+                    "name": "fullname",
+                    "type": "string",
+                    "index": null
+                }, {
+                    "name": "description",
+                    "type": "string",
+                    "index": null
+                }],
+                "final": "{\n  \"query\": {\n    \"bool\": {\n      \"must\": [\n        {\n          \"range\": {\n            \"forks\": {\n              \"gt\": \"400\"\n            }\n          }\n        }\n      ]\n    }\n  }\n}"
+            },
+            "queryId": 3,
+            "isWatching": false,
+            "output": ""
+        },
+        "version": "2.0"
+    }, {
+        "name": "lt-query",
+        "tag": "learn-mirage",
+        "config": {
+            "url": "https://bYTSo47tj:d001826a-f4ef-42c5-b0aa-a94f29967ba0@scalr.api.appbase.io",
+            "appname": "gitxplore-live",
+            "username": "bYTSo47tj",
+            "password": "d001826a-f4ef-42c5-b0aa-a94f29967ba0",
+            "host": "https://scalr.api.appbase.io"
+        },
+        "selectedTypes": [
+            "gitxplore-live"
+        ],
+        "result": {
+            "resultQuery": {
+                "type": "",
+                "result": [{
+                    "boolparam": 0,
+                    "parent_id": 0,
+                    "id": 2,
+                    "internal": [{
+                        "field": {
+                            "name": "forks",
+                            "type": "numeric",
+                            "index": null
+                        },
+                        "query": "3",
+                        "selectedField": "forks",
+                        "selectedQuery": "lt",
+                        "input": "",
+                        "analyzeTest": "analyzed",
+                        "type": "numeric",
+                        "appliedQuery": {
+                            "range": {
+                                "forks": {
+                                    "lt": "20"
+                                }
+                            }
+                        }
+                    }],
+                    "minimum_should_match": "",
+                    "availableQuery": [{
+                        "range": {
+                            "forks": {
+                                "lt": "20"
+                            }
+                        }
+                    }]
+                }],
+                "availableFields": [{
+                    "name": "forks",
+                    "type": "integer",
+                    "index": null
+                }, {
+                    "name": "fullname",
+                    "type": "string",
+                    "index": null
+                }, {
+                    "name": "description",
+                    "type": "string",
+                    "index": null
+                }],
+                "final": "{\n  \"query\": {\n    \"bool\": {\n      \"must\": [\n        {\n          \"range\": {\n            \"forks\": {\n              \"lt\": \"20\"\n            }\n          }\n        }\n      ]\n    }\n  }\n}"
+            },
+            "queryId": 3,
+            "isWatching": false,
+            "output": ""
+        },
+        "version": "2.0"
+    }, {
+    "name": "match-query",
+    "tag": "learn-mirage",
+    "config": {
+        "url": "https://bYTSo47tj:d001826a-f4ef-42c5-b0aa-a94f29967ba0@scalr.api.appbase.io",
+        "appname": "gitxplore-live",
+        "username": "bYTSo47tj",
+        "password": "d001826a-f4ef-42c5-b0aa-a94f29967ba0",
+        "host": "https://scalr.api.appbase.io"
+    },
+    "selectedTypes": [
+        "gitxplore-live"
+    ],
+    "result": {
+        "resultQuery": {
+            "type": "",
+            "result": [
+                {
+                    "boolparam": 0,
+                    "parent_id": 0,
+                    "id": 1,
+                    "internal": [
+                        {
+                            "field": {
+                                "name": "fullname",
+                                "type": "string",
+                                "index": null
+                            },
+                            "query": "0",
+                            "selectedField": "fullname",
+                            "selectedQuery": "match",
+                            "input": "",
+                            "analyzeTest": "analyzed",
+                            "type": "string",
+                            "appliedQuery": {
+                                "match": {
+                                    "fullname": "lodash-archive~lodash-fp"
+                                }
+                            }
+                        }
+                    ],
+                    "minimum_should_match": "",
+                    "availableQuery": [
+                        {
+                            "match": {
+                                "fullname": "lodash-archive~lodash-fp"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "availableFields": [{
+                "name": "forks",
+                "type": "integer",
+                "index": null
+            }, {
+                "name": "fullname",
+                "type": "string",
+                "index": null
+            }, {
+                "name": "description",
+                "type": "string",
+                "index": null
+            }],
+            "final": "{\n  \"query\": {\n    \"bool\": {\n      \"must\": [\n        {\n          \"match\": {\n            \"fullname\": \"lodash-archive~lodash-fp\"\n          }\n        }\n      ]\n    }\n  }\n}"
+        },
+        "queryId": 2,
+        "isWatching": false
+    },
+    "version": "2.0"
+}]
+}
